@@ -2,7 +2,7 @@ import React from 'react';
 import Nuke from '../assets/explosion.svg'
 const Footer = () => {
   return (
-    <div className='bg-black font-abc md:px-14 p-4 max-w-screen-2xl mx-auto text-white '>
+    <div className='bg-black font-abc md:px-14 p-4  mx-auto text-white '>
     <div className='my-12 flex flex-col md:flex-row gap--1'>
          <div className="md:w-1/2 space-y-8">
             <a href="/" className='text-2xl font-semibold flex items-center space-x-3 text-first '>
