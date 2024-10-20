@@ -5,13 +5,14 @@ import Description from './Description';
 
 import Ask from './Ask';
 import More from './More';
-
+import Navbar from '../Navbar'
 
 
 
 const Homepage = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center ">
+      <Navbar />
     <LampContainer>
       <motion.h1
         initial={{ opacity: 0.5, y: 100 }}

@@ -48,7 +48,7 @@ const Login = () => {
       
       setCurrUser(res.data.userId)
       setLoading(false)
-      window.location.href = '/';
+      window.location.href = '/sidebar';
       alert("Login successful ! I LOVE YOU !")
   } catch(err){
     console.error(err);
@@ -88,10 +88,12 @@ const Login = () => {
             <Input id="password" type="password" required value = {password}
               onChange = {(e)=> setPassword(e.target.value)} />
           </div>
-          <Button type="submit" onClick = {handleLogin} disable = {loading} className="w-full">
+          <Link to = "/sidebar">
+          <Button type="submit" onClick = {handleLogin} disable = {loading} className="w-full" to='/sidebar' >
             {loading? "Loading" : "Login"}
             
           </Button>
+          </Link>
           <Button variant="outline" className="w-full">
             Login with Google
           </Button>
